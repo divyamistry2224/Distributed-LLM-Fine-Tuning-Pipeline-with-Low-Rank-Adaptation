@@ -1,0 +1,56 @@
+{
+  "fixed_seed": 42,
+  "results": [
+    {
+      "alpha": 4,
+      "parameters": {
+        "total": 94272,
+        "trainable": 768,
+        "trainable_fraction": 0.008146639511201629
+      },
+      "rank": 2,
+      "seconds": 0.07165547199838329,
+      "validation": {
+        "answer_nll": 6.257131865530303,
+        "answer_perplexity": 521.7204278252985,
+        "perplexity_capped": false,
+        "supervised_tokens": 66
+      }
+    },
+    {
+      "alpha": 8,
+      "parameters": {
+        "total": 95040,
+        "trainable": 1536,
+        "trainable_fraction": 0.01616161616161616
+      },
+      "rank": 4,
+      "seconds": 0.0795463509966794,
+      "validation": {
+        "answer_nll": 6.256864374334162,
+        "answer_perplexity": 521.5808908672944,
+        "perplexity_capped": false,
+        "supervised_tokens": 66
+      }
+    },
+    {
+      "alpha": 16,
+      "parameters": {
+        "total": 96576,
+        "trainable": 3072,
+        "trainable_fraction": 0.03180914512922465
+      },
+      "rank": 8,
+      "seconds": 0.0722231820000161,
+      "validation": {
+        "answer_nll": 6.254873102361506,
+        "answer_perplexity": 520.5433148487066,
+        "perplexity_capped": false,
+        "supervised_tokens": 66
+      }
+    }
+  ],
+  "selection_split": "validation",
+  "test_used": false,
+  "scope": "Tiny randomly initialized CPU integration fixture; four optimizer steps per rank; timings exclude process startup."
+}

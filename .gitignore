@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+checkpoints/
+merged_model/
+runs/
+data/processed/
+wandb/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store

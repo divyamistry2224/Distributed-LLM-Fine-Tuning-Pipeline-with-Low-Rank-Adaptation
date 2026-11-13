@@ -1,0 +1,35 @@
+# LoRA adapter configuration
+# r: rank of the low-rank decomposition. Higher = more capacity, more params to train.
+r: 16
+
+# alpha: scaling factor applied to the LoRA update (effective scale = alpha / r).
+lora_alpha: 32
+
+# dropout applied inside the LoRA adapters during training.
+lora_dropout: 0.05
+
+# Which attention/projection matrices to inject LoRA adapters into.
+# For LLaMA-family architectures these are the standard attention projections.
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+
+# Whether to also adapt the MLP projections (increases trainable params, sometimes helps
+# on tasks that need more than attention-level adaptation).
+adapt_mlp: false
+mlp_target_modules:
+  - gate_proj
+  - up_proj
+  - down_proj
+
+bias: "none"          # options: "none", "all", "lora_only"
+task_type: "CAUSAL_LM"
+
+# 4-bit quantization settings (QLoRA-style)
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: "bfloat16"

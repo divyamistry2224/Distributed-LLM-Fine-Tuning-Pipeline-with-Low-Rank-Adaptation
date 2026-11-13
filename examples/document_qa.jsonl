@@ -1,0 +1,24 @@
+{"document_id": "doc-00", "context": "LoRA freezes the pretrained base weights and trains low-rank adapter matrices.", "question": "What does LoRA freeze?", "answer": "the pretrained base weights"}
+{"document_id": "doc-01", "context": "Gradient accumulation combines several microbatches before an optimizer update.", "question": "What is combined before an optimizer update?", "answer": "several microbatches"}
+{"document_id": "doc-02", "context": "Validation documents are held out from optimization and used for model selection.", "question": "Which documents are held out from optimization?", "answer": "validation documents"}
+{"document_id": "doc-03", "context": "A checkpoint records adapter weights and optimizer state for restarting training.", "question": "What does a checkpoint record?", "answer": "adapter weights and optimizer state"}
+{"document_id": "doc-04", "context": "A tokenizer maps text into token identifiers and reconstructs text from those identifiers.", "question": "What does a tokenizer map text into?", "answer": "token identifiers"}
+{"document_id": "doc-05", "context": "Chronological evaluation places training observations before validation observations in time.", "question": "Which observations come first?", "answer": "training observations"}
+{"document_id": "doc-06", "context": "The city report contains monthly totals for road inspections completed in May.", "question": "When were the inspections completed?", "answer": "May"}
+{"document_id": "doc-07", "context": "The warehouse refresh runs every Monday and records a checksum for each input file.", "question": "When does the warehouse refresh run?", "answer": "every Monday"}
+{"document_id": "doc-08", "context": "The library opens at nine in the morning and closes at six in the evening.", "question": "When does the library open?", "answer": "nine in the morning"}
+{"document_id": "doc-09", "context": "The sensor measures air temperature once every ten minutes.", "question": "What does the sensor measure?", "answer": "air temperature"}
+{"document_id": "doc-10", "context": "Solar panels convert sunlight into electrical energy.", "question": "What do solar panels convert sunlight into?", "answer": "electrical energy"}
+{"document_id": "doc-11", "context": "The lake survey found higher nitrate levels near the northern inlet.", "question": "Where were nitrate levels higher?", "answer": "near the northern inlet"}
+{"document_id": "doc-12", "context": "The rail service operates between the central station and the airport.", "question": "Where does the rail service terminate?", "answer": "the airport"}
+{"document_id": "doc-13", "context": "The experiment uses a fixed random seed to make repeated runs reproducible.", "question": "Why is a fixed random seed used?", "answer": "to make repeated runs reproducible"}
+{"document_id": "doc-14", "context": "The adapter rank controls the dimension of the low-rank update.", "question": "What does the adapter rank control?", "answer": "the dimension of the low-rank update"}
+{"document_id": "doc-15", "context": "The archive retains monthly exports for twelve months.", "question": "How long are exports retained?", "answer": "twelve months"}
+{"document_id": "doc-16", "context": "Each quality report lists accepted records and quarantined records.", "question": "What does each quality report list?", "answer": "accepted records and quarantined records"}
+{"document_id": "doc-17", "context": "The evaluation script computes exact match and token overlap scores.", "question": "Which scores does the evaluation script compute?", "answer": "exact match and token overlap scores"}
+{"document_id": "doc-18", "context": "The delivery team reviews error logs before approving a release.", "question": "What does the delivery team review before a release?", "answer": "error logs"}
+{"document_id": "doc-19", "context": "The pump is inspected after every two hundred operating hours.", "question": "When is the pump inspected?", "answer": "after every two hundred operating hours"}
+{"document_id": "doc-20", "context": "The policy requires an annual review of access permissions.", "question": "How often are access permissions reviewed?", "answer": "annually"}
+{"document_id": "doc-21", "context": "The model serves requests through a bounded generation endpoint.", "question": "How does the model serve requests?", "answer": "through a bounded generation endpoint"}
+{"document_id": "doc-22", "context": "The coastal study tracks water salinity across four sampling locations.", "question": "What does the coastal study track?", "answer": "water salinity"}
+{"document_id": "doc-23", "context": "The training worker saves a final adapter after the last optimizer update.", "question": "When is the final adapter saved?", "answer": "after the last optimizer update"}

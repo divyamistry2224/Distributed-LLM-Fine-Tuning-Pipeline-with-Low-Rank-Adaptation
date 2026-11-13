@@ -1,0 +1,1 @@
+{"context":"LoRA freezes base weights and trains low-rank adapters.","question":"What is frozen during LoRA training?","max_new_tokens":32}

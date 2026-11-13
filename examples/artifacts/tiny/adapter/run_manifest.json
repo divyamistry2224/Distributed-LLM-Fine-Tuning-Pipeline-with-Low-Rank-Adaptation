@@ -1,0 +1,10 @@
+{
+  "base_model": "examples/artifacts/tiny/base",
+  "parameters": {
+    "total": 95040,
+    "trainable": 1536,
+    "trainable_fraction": 0.01616161616161616
+  },
+  "scope": "Offline integration test with a randomly initialized tiny GPT-2 model",
+  "seed": 42
+}

@@ -1,0 +1,22 @@
+{
+  "adapter_parameters_match_across_ranks": true,
+  "backend": "gloo",
+  "checkpoint_and_export": "passed",
+  "effective_batch_size": 8,
+  "optimizer_steps": 4,
+  "parameters": {
+    "total": 95040,
+    "trainable": 1536,
+    "trainable_fraction": 0.01616161616161616
+  },
+  "scope": "Two-worker CPU/Gloo integration test; tiny randomly initialized GPT-2 + LoRA",
+  "torch_version": "2.5.1+cpu",
+  "updates_per_epoch": 2,
+  "validation": {
+    "answer_nll": 6.256070223721591,
+    "answer_perplexity": 521.1668415138415,
+    "perplexity_capped": false,
+    "supervised_tokens": 66
+  },
+  "world_size": 2
+}

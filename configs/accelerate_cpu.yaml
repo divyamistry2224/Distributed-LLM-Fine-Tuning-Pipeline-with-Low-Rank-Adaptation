@@ -1,0 +1,6 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_CPU
+mixed_precision: 'no'
+num_machines: 1
+num_processes: 2
+use_cpu: true

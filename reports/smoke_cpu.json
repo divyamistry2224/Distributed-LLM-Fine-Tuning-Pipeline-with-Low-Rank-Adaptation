@@ -1,0 +1,63 @@
+{
+  "adapter_output_delta": 0.06900319457054138,
+  "adapter_reload_max_logit_error": 0.0,
+  "api_auth_and_generation": "passed",
+  "base_weights_unchanged": true,
+  "final_validation": {
+    "answer_nll": 6.254183682528409,
+    "answer_perplexity": 520.1845656420825,
+    "perplexity_capped": false,
+    "supervised_tokens": 66
+  },
+  "hardware": "CPU",
+  "initial_validation": {
+    "answer_nll": 6.258630925958807,
+    "answer_perplexity": 522.5031047668411,
+    "perplexity_capped": false,
+    "supervised_tokens": 66
+  },
+  "merge_max_logit_error": 1.7881393432617188e-07,
+  "optimizer_steps": 8,
+  "parameters": {
+    "total": 95040,
+    "trainable": 1536,
+    "trainable_fraction": 0.01616161616161616
+  },
+  "resume_verified": true,
+  "resume_vs_uninterrupted_max_parameter_error": 0.0,
+  "scope": "Offline integration test with a randomly initialized tiny GPT-2 model",
+  "seed": 42,
+  "splits": {
+    "test": {
+      "documents": 4,
+      "records": 4,
+      "sha256": "fe5e4f469d4c91115d78de48bc3e7ae8118cf6aa93e58a35a84448b09d531a7f"
+    },
+    "train": {
+      "documents": 16,
+      "records": 16,
+      "sha256": "ef7bc90bc5bc96e4b1e2cb53865bcca94767926c4c0a0fc226688b1c8aafa70e"
+    },
+    "validation": {
+      "documents": 4,
+      "records": 4,
+      "sha256": "b5a808b454fac8797d52230c977e94f1fb6618b724c3845bc4426222cf194206"
+    }
+  },
+  "test": {
+    "adapted": {
+      "answer_nll": 6.257288091322955,
+      "answer_perplexity": 521.8019403796945,
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    },
+    "base": {
+      "answer_nll": 6.258836858412799,
+      "answer_perplexity": 522.6107161933868,
+      "exact_match": 0.0,
+      "token_f1": 0.0
+    }
+  },
+  "torch_version": "2.5.1+cpu",
+  "world_size": 1
+}

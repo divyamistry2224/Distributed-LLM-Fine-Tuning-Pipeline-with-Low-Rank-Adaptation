@@ -1,0 +1,9 @@
+# Install PyTorch separately for the target CPU/CUDA runtime.
+transformers==4.46.3
+tokenizers==0.20.3
+peft==0.13.2
+accelerate==1.1.1
+datasets==3.1.0
+PyYAML==6.0.2
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
