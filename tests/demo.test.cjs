@@ -50,3 +50,28 @@ test('QA form handles input validation, model responses and errors safely',async
   assert.equal($('#ask').disabled,false);assert.equal($('#answer-text').textContent,answer);assert.equal($('#evidence mark').textContent,answer);
   $('#ask').click();w.qaWorker.onmessage({data:{type:'error',message:'Offline'}});assert.equal($('#ask').disabled,false);assert.equal($('#model-state').textContent,'Offline');dom.window.close();
 });
+
+test('adapter rank changes matrix dimensions and parameter counts while the base stays fixed',async()=>{
+  const {dom,$}=await app();
+  assert.equal($('#adapter').classList.contains('active'),true);
+  const frozen=$('#frozen-matrix').innerHTML;
+  $('#sandbox-rank').value='1';$('#sandbox-rank').dispatchEvent(new dom.window.Event('input'));
+  assert.equal($('#sandbox-params').textContent,'32');
+  assert.equal($('#sandbox-saving').textContent,'88%');
+  assert.equal($('#b-matrix').children.length,16);
+  $('#sandbox-rank').value='8';$('#sandbox-rank').dispatchEvent(new dom.window.Event('input'));
+  assert.equal($('#sandbox-params').textContent,'256');
+  assert.equal($('#sandbox-saving').textContent,'0%');
+  assert.match($('#sandbox-saving-note').textContent,/same count/);
+  assert.equal($('#a-matrix').children.length,128);
+  assert.equal($('#frozen-matrix').innerHTML,frozen);
+  dom.window.close();
+});
+test('pipeline nodes inspect contracts and tracing explains the first stage',async()=>{
+  const {dom,$}=await app();
+  $('[data-flow="2"]').click();assert.match($('#stage-detail').textContent,/Accelerate/);
+  $('#trace-pipeline').click();assert.equal($('#trace-pipeline').disabled,true);
+  assert.match($('#trace-log').textContent,/Validate JSONL/);
+  assert.equal($('[data-flow="0"]').classList.contains('tracing'),true);
+  dom.window.close();
+});

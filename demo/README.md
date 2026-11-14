@@ -1,11 +1,12 @@
 # LoRA Lab
 
-A buildless public interface for the fine-tuning project. Four sections provide distinct interactions:
+A buildless public interface for the fine-tuning project. Five workbench sections provide distinct interactions:
 
+- Adapter playground: adjustable rank, illustrative factor matrices, parameter savings and a signal animation.
 - Document studio: real, local pretrained DistilBERT QA using Transformers.js and ONNX Runtime / WebAssembly. First use downloads public q8 weights (approximately 65 MB). Questions and context stay in the browser. The input budget is 512 model tokens.
 - Experiment explorer: recorded rank experiments, parameter counts, held-out metrics and downloadable JSON.
 - Recovery lab: an explicitly labeled checkpoint-protocol simulation, resume-contract checks and actual document split inspection.
-- Architecture: inspect implementation stages and download the SVG.
+- Architecture: inspect clickable pipeline nodes, trace an illustrative request path and download the full SVG.
 
 The browser QA model is a pretrained extractive baseline, not the project's LoRA adapter. LoRA measurements come from the tiny CPU fixture and do not establish QA quality. This distinction is visible in the interface.
 
