@@ -1,6 +1,6 @@
 # Distributed LLM Fine-Tuning with LoRA
 
-An end-to-end document question-answering pipeline: validate JSONL data, create document-disjoint splits, train low-rank adapters, compare held-out results, and serve inference through FastAPI. Built with PyTorch, Transformers, PEFT and Accelerate.
+An end-to-end LLM fine-tuning project built with PyTorch, Hugging Face PEFT and Accelerate. It combines validated document-QA datasets, resumable LoRA training, distributed execution, held-out model evaluation and FastAPI inference. The interactive LoRA Lab lets visitors explore adapter ranks, inspect recorded experiments and try browser-based document QA.
 
 ![Pipeline architecture](docs/assets/architecture.png)
 
