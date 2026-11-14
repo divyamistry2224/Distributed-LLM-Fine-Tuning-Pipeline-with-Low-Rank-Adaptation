@@ -1,0 +1,21 @@
+name: Demo checks
+on:
+  push:
+    branches: [main]
+    paths: ['demo/**', 'tests/demo.test.cjs', 'package*.json', '.github/workflows/demo.yml']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node --check demo/app.js && node --check demo/qa-worker.js
+      - run: npm test

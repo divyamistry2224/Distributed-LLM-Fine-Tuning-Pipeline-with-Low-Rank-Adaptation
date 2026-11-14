@@ -4,6 +4,14 @@ An end-to-end document question-answering pipeline: validate JSONL data, create 
 
 ![Pipeline architecture](docs/assets/architecture.png)
 
+## Interactive demo
+
+[Open LoRA Lab](https://divya-lora-lab.wise-tapir-6197.chatgpt.site)
+
+Try document QA directly in your browser, compare recorded rank experiments, explore checkpoint recovery and inspect the architecture. The live QA component uses a pretrained DistilBERT baseline; the experiment explorer displays the project's separately measured LoRA results. No account or API key is required.
+
+See [demo hosting and checks](demo/README.md) for GitHub Pages setup and implementation details.
+
 ## Pipeline
 
 - **Data engineering:** schema validation, duplicate and conflicting-answer quarantine, document/context grouping, seeded splits and SHA-256 provenance.
