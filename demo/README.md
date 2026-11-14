@@ -14,7 +14,7 @@ The browser QA model is a pretrained extractive baseline, not the project's LoRA
 
 Serve this directory as static files. GitHub Pages deployment is prepared in `.github/workflows/pages.yml`; a repository administrator must first select **Settings → Pages → Source → GitHub Actions**, then run **Publish experiment explorer** from Actions. The connected GitHub integration cannot enable Pages for this repository.
 
-The same files are mirrored to the public Sites preview. No API keys or server are needed. CDN access to jsDelivr, Hugging Face model files and Google Fonts is used; fonts have local fallbacks.
+No API keys or server are needed for the static demo. CDN access to jsDelivr, Hugging Face model files and Google Fonts is used; fonts have local fallbacks.
 
 ## Checks
 

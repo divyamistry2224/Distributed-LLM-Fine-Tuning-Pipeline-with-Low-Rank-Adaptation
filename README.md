@@ -6,7 +6,9 @@ An end-to-end LLM fine-tuning project built with PyTorch, Hugging Face PEFT and 
 
 ## Interactive demo
 
-[Open LoRA Lab](https://divya-lora-lab.wise-tapir-6197.chatgpt.site)
+[LoRA Lab — GitHub Pages demo](https://divyamistry2224.github.io/Distributed-LLM-Fine-Tuning-Pipeline-with-Low-Rank-Adaptation/)
+
+*GitHub Pages activation is pending in this repository’s Settings → Pages. The deployment workflow is ready.*
 
 Try document QA directly in your browser, compare recorded rank experiments, explore checkpoint recovery and inspect the architecture. The live QA component uses a pretrained DistilBERT baseline; the experiment explorer displays the project's separately measured LoRA results. No account or API key is required.
 
